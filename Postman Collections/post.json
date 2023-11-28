@@ -175,6 +175,12 @@
 			"response": []
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{token}}"
+		}
+	},
 	"event": [
 		{
 			"listen": "prerequest",
@@ -197,14 +203,17 @@
 	],
 	"variable": [
 		{
-			"id": "cf5134dc-c11c-47ce-a12d-f8c43c3a7255",
 			"key": "id",
 			"value": "1"
 		},
 		{
-			"id": "de87d5ec-53e3-4065-bbea-d34d786d16a4",
 			"key": "base_url",
 			"value": "https://postman-rest-api-learner.glitch.me/"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "default"
 		}
 	]
 }
